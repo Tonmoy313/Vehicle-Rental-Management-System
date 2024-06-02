@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderpane" prefHeight="600.0" prefWidth="1047.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.homeController">
+   <top>
+      <HBox prefHeight="600.0" prefWidth="1050.0" style="-fx-background-color: #16234D;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #02030A;">
+               <children>
+                  <ImageView fx:id="btnProfile" accessibleRole="BUTTON" fitHeight="103.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Meanpath_64px_2.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Comapny_Name" textFill="#e7e5e5">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#btnActn" prefHeight="35.0" prefWidth="150.0" styleClass="menu-bar-btn" text="Customers" textFill="#eec290" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView fill="#dadada" glyphName="USER" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnRentCar" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#btnActn" prefHeight="35.0" prefWidth="150.0" styleClass="menu-bar-btn" text="Rent Car" textFill="#eec290" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView fill="#dadada" glyphName="CAR" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReturnedCar" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#btnActn" prefHeight="35.0" prefWidth="150.0" styleClass="menu-bar-btn" text="Returned Car" textFill="#eec290" textOverrun="CLIP">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView fill="#dadada" glyphName="KEY" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#btnActn" prefHeight="35.0" prefWidth="150.0" styleClass="menu-bar-btn" text="Sign Out" textFill="#eec290" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="160.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView fill="#f68416" glyphName="SIGN_OUT" size="20" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="rootanchorpane" prefHeight="568.0" prefWidth="803.0" style="-fx-background-color: #f0f0f0;" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane maxWidth="800.0" minWidth="800.0" prefHeight="153.0" prefWidth="800.0" style="-fx-background-color: #000000;" />
+                  <ImageView fitHeight="447.0" fitWidth="800.0" layoutY="153.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/images%20(4).jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#e7e8fc" layoutX="229.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+                     <font>
+                        <Font name="System Bold" size="74.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#c9dee4" layoutX="191.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Rental Managment System">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,88 @@
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color: #2196f3; 
+}
+.trans-btn-white-border{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+.trans-btn-white-border:hover{
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-border-width: 3px 3px 3px 3px;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold ;
+}
+.white-pane{
+    -fx-background-color: #ffffff;
+}
+.blue-panel{
+    -fx-background-color:  #05071F;
+}
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color:  #2196f3;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: whitesmoke;}
+
+.tf_box:hover{
+    -fx-background-color: transparent;
+    -fx-border-color:  #f68416;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold ;
+}
+
+.tf{
+    -fx-background-color: transparent;    
+}
+.blue-btn{
+    -fx-background-color: #2196f3;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #ffffff;
+}
+.blue-btn:hover{
+    -fx-background-color: #2196f3;
+    -fx-border-color: #f68416;
+    -fx-text-fill: whitesmoke;
+    -fx-border-radius: 5px;
+    -fx-border-width: 3px 3px 3px 3px;
+    -fx-wieght: bold;
+}
+.menu-bar-btn{
+    -fx-background-color:  #02030A;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #ffffff;
+}
+.menu-bar-btn:hover{
+    -fx-background-color:  #02030A;
+    -fx-border-radius: 3px;
+    -fx-border-color: #2196f3;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold ;
+}
+.search-box{
+    -fx-background-color: transparent;
+    -fx-border-radius: 2em;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-font-size: 12px;
+    -fx-text-fill: whitesmoke;
+}
+.search-box:hover{
+    -fx-background-color: transparent;
+    -fx-border-radius: 2em;
+    -fx-border-color: #f68416;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-font-size: 13px;
+    -fx-text-fill: whitesmoke;
+}

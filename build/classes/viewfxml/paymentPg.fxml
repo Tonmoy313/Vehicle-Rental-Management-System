@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="1050.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #CFD8DC;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentPgController">
+   <children>
+      <VBox layoutX="-2.0" style="-fx-background-color: #004D40;">
+         <children>
+            <Text fill="#6c8894" strokeType="OUTSIDE" strokeWidth="0.0" text="PAY">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="118.0" top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="#b2dfdb" strokeType="OUTSIDE" strokeWidth="0.0" text="To Pay :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="92.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="totalBox" fill="#b2dfdb" strokeType="OUTSIDE" strokeWidth="0.0" text="1000.00 Tk" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="27.0" />
+               </VBox.margin>
+            </Text>
+            <HBox>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <ImageView fx:id="imgIcon" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/save.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="116.0" top="25.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="payBtn" mnemonicParsing="false" onAction="#onClickBtn" prefHeight="32.0" prefWidth="257.0" style="-fx-background-color: #004D40;" text="TO PAY" textFill="#b2dfdb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="72.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#onClickBtn" prefHeight="32.0" prefWidth="257.0" style="-fx-background-color: #004D40;" text="CANCEL" textFill="#b2dfdb">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <AnchorPane id="AnchorPane" layoutX="331.0" layoutY="300.0" minWidth="206.0" mouseTransparent="true" prefHeight="281.0" prefWidth="206.0" style="-fx-background-color: #004D40;">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <children>
+            <Text fill="#b2dfdb" layoutX="11.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LATE" textAlignment="CENTER" wrappingWidth="185.619140625">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="lateDayBox" fill="#b2dfdb" layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="185.619140625">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#b2dfdb" layoutX="11.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DAYS" textAlignment="CENTER" wrappingWidth="185.619140625">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" layoutX="609.0" layoutY="432.0" minWidth="190.0" mouseTransparent="true" prefHeight="150.0" prefWidth="206.0" style="-fx-background-color: #004D40;">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <children>
+            <Text fill="#b2dfdb" layoutX="9.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DUE" textAlignment="CENTER" wrappingWidth="185.619140625">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="602.0" layoutY="24.0">
+         <children>
+            <VBox prefHeight="274.0" prefWidth="206.0" style="-fx-background-color: #CFD8DC;">
+               <children>
+                  <VBox alignment="TOP_RIGHT" prefHeight="67.0" prefWidth="206.0" style="-fx-background-color: #CFD8DC;">
+                     <children>
+                        <Text fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="RIGHT" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No" textAlignment="RIGHT" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="67.0" prefWidth="206.0" style="-fx-background-color: #CFD8DC;">
+                     <children>
+                        <Text fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Model" textAlignment="RIGHT" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Reg No" textAlignment="RIGHT" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="106.0" prefWidth="206.0" style="-fx-background-color: #CFD8DC;">
+                     <children>
+                        <Text fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Date" textAlignment="RIGHT" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival Date" textAlignment="RIGHT" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Returned Date" textAlignment="RIGHT" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="274.0" prefWidth="206.0" style="-fx-background-color: #004D40;">
+               <children>
+                  <VBox prefHeight="67.0" prefWidth="206.0" style="-fx-background-color: #CFD8DC;">
+                     <children>
+                        <Text fx:id="nameBox" fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="phoneNoBox" fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="67.0" prefWidth="206.0" style="-fx-background-color: #CFD8DC;">
+                     <children>
+                        <Text fx:id="carModelBox" fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Model" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="carRegBox" fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="01XXXXXXXXX" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="137.0" prefWidth="206.0" style="-fx-background-color: #CFD8DC;">
+                     <children>
+                        <Text fx:id="bookBox" fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="1999/01/01" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="arriveBox" fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="1999/01/01" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="returnBox" fill="#004d40" strokeType="OUTSIDE" strokeWidth="0.0" text="1999/01/01" wrappingWidth="185.619140625">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="28.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <Text fill="#6c8894" layoutX="275.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENT">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Text>
+      <Text fx:id="lateBox" fill="#6c8894" layoutX="331.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000 Tk" textAlignment="CENTER" wrappingWidth="206.0000070836395">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="dueBox" fill="#6c8894" layoutX="609.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000 Tk" textAlignment="CENTER" wrappingWidth="206.0000070836395">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#004d40" layoutX="844.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADVANCE" textAlignment="CENTER" underline="true" wrappingWidth="185.619140625">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Text>
+      <Text fx:id="advanceBox" fill="#6c8894" layoutX="833.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10000 Tk" textAlignment="CENTER" wrappingWidth="206.0000070836395">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="successfulTxt" fill="#004d40" layoutX="316.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUCCESSFUL !" visible="false" wrappingWidth="326.0000082745901">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#004d40" layoutX="827.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Price" textAlignment="CENTER" underline="true" wrappingWidth="185.619140625">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Text>
+      <Text fx:id="carPriceBox" fill="#6c8894" layoutX="833.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000.00 Tk" textAlignment="CENTER" wrappingWidth="206.0000070836395">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="hasntReturnTxt" fill="#28363b" layoutX="328.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="**This car has not been RETURNED**" textAlignment="CENTER" visible="false" wrappingWidth="326.0000082745901">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
